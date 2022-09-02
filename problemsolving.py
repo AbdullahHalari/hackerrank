@@ -73,5 +73,15 @@ while i < 3:
     i+=1
 print(alice)
 print(bob)
+   
+#4
+  # Write your code here
+ar_count = int(input().strip())
+ar = list(map(int, input().rstrip().split()))
+sum=0
+for i in ar:
+    sum+=i      
+print(sum) 
     
+
 
