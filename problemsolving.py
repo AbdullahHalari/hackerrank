@@ -84,4 +84,45 @@ for i in ar:
 print(sum) 
     
 
+# 5
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'diagonalDifference' function below.
+#
+# The function is expected to return an INTEGER.
+# The function accepts 2D_INTEGER_ARRAY arr as parameter.
+#
+
+
+
+n = int(input().strip())
+
+arr = []
+for _ in range(n):
+    arr.append(list(map(int, input().rstrip().split())))
+    
+sum = 0  
+add=0
+count = 0
+i = 0
+j=n-1
+while(count<n):
+    
+    if(count==i):
+        sum+=arr[count][i]
+        add+=arr[count][j]
+    count+=1
+    i+=1
+    j-=1
+
+print(abs(sum-add))    
+    
+
 
