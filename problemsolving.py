@@ -166,6 +166,32 @@ print("{:.6f}".format(negative/n))
 print("{:.6f}".format(zero/n))
 # plusMinus(arr)
 
+#7
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+#
+# Complete the 'staircase' function below.
+#
+# The function accepts INTEGER n as parameter.
+#
+
+n = int(input().strip())
+
+for i in range(0,n):
+    for j in range(0,n):
+        if(i + j >= n-1):
+            print("#",end="")
+        else:    
+            print(" ",end="")
+    print("\r")
+            
+        
 
 
     
