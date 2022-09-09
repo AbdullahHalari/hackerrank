@@ -191,7 +191,16 @@ for i in range(0,n):
             print(" ",end="")
     print("\r")
             
-        
+#add 8
+arr = list(map(int, input().rstrip().split()))
+sum_min=0
+sum_max=0
+arr.sort()
+for i in arr:
+    sum_min+=i
+    sum_max+=i
+print(sum_min-arr[4],sum_max-arr[0])   
+
 
 
     
