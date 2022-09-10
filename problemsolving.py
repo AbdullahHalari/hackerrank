@@ -201,6 +201,17 @@ for i in arr:
     sum_max+=i
 print(sum_min-arr[4],sum_max-arr[0])   
 
+#add 9
+candles_count = int(input().strip())
+candles = list(map(int, input().rstrip().split()))
+big=max(candles)
+count=0
+for i in candles:
+    if(i==big):
+        count+=1
+        
+print(count)        
+
 
 
     
