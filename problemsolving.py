@@ -213,6 +213,30 @@ for i in candles:
 print(count)        
 
 
+#add 10
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+s = input()
+hh='00'
+if(s[8:10]=="PM"):
+    if(s[:2]!='12'):
+        hh=str(int(s[:2])+12)
+    elif(s[:2]=='12'):
+        hh=s[:2]
+else:
+    if(s[:2]=='12'):
+        hh="00"
+    elif(s[:2]!='12'):
+        hh=s[:2]
+print(hh+":"+s[3:5]+":"+s[6:8])      
+        
 
     
 
